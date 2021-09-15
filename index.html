@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1><a href="#" onclick="filterSelection('item')"></a></h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul class="kind">
+            <li><button onclick="filterSelection('tshirt')"><img src="imgs/blue_t.png" alt=""></button></li>
+            <li><button onclick="filterSelection('pants')"><img src="imgs/blue_p.png" alt=""></button></li>
+            <li><button onclick="filterSelection('skirt')"><img src="imgs/blue_s.png" alt=""></button></li>
+        </ul>
+        <ul class="color">
+            <li><button class="blue" onclick="filterSelection('blue')">Blue</button></li>
+            <li><button class="yellow" onclick="filterSelection('yellow')">Yellow</button></li>
+            <li><button class="pink" onclick="filterSelection('pink')">Pink</button></li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <section class="container">
+        <!-- <article class="item ${item.kind} ${item.color}">
+            <img src="${item.image}" alt="">
+            <span>${item.gender}, ${item.size}</span>
+        </article> -->
+    </section>
+</body>
+</html>
