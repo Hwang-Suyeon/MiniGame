@@ -23,19 +23,19 @@ function addItems(items) {
 function filterSelection(c) {
     const $item = document.getElementsByClassName('item');
     for (let i = 0; i < $item.length; i++) {
-        w3RemoveClass($item[i], 'show');
-        if ($item[i].className.indexOf(c) > -1) w3AddClass($item[i], 'show');
+        removeClass($item[i], 'show');
+        if ($item[i].className.indexOf(c) > -1) addClass($item[i], 'show');
     }
 }
 
-function w3AddClass(element, name) {
+function addClass(element, name) {
     var arr = element.className.split(' ');
     if (arr.indexOf(name) == -1) {
         element.className += ' ' + name;
     }
 }
 
-function w3RemoveClass(element, name) {
+function removeClass(element, name) {
     var arr = element.className.split(' ');
     var index = arr.indexOf(name)
     if (index > -1) {
@@ -47,7 +47,7 @@ function w3RemoveClass(element, name) {
 // main
 loadItems()
     .then(items => {
-        console.log(items);
+        // console.log(items);
         addItems(items);
         filterSelection('item');
     })
