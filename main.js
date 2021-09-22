@@ -21,10 +21,10 @@ function addItems(items) {
 
 // Filter Items 
 function filterSelection(c) {
-    const $item = document.getElementsByClassName('item');
-    for (let i = 0; i < $item.length; i++) {
-        removeClass($item[i], 'show');
-        if ($item[i].className.indexOf(c) > -1) addClass($item[i], 'show');
+    const $items = document.getElementsByClassName('item');
+    for (let i = 0; i < $items.length; i++) {
+        removeClass($items[i], 'show');
+        if ($items[i].className.indexOf(c) > -1) addClass($items[i], 'show');
     }
 }
 
